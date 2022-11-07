@@ -1,8 +1,19 @@
+// Instruction 01: Create an interface for TodoItem
+interface Todo {
+    id: number;
+    title: string; 
+    status: TodoStatus; 
+    completedOn: Date;
+}
+
+
 const todoItems = [
+    {id: 1, title: "Learn HTML", status: "done", completedOn: new Date("2021-09-11")},    
     { id: 1, title: "Learn HTML", status: "done", completedOn: new Date("2021-09-11") },
     { id: 2, title: "Learn TypeScript", status: "in-progress" },
     { id: 3, title: "Write the best app in the world", status: "todo" },
 ]
+
 
 function addTodoItem(todo) {
     const id = getNextId(todoItems)
