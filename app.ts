@@ -7,6 +7,14 @@ interface Todo {
 }
 
 
+// Instruction 02: Create an enum for status member for the TodoItem
+enum TodoStatus {
+    Done = "done",
+    InProgress = "in-progress",
+    Todo = "todo"
+}
+
+
 const todoItems = [
     {id: 1, title: "Learn HTML", status: "done", completedOn: new Date("2021-09-11")},    
     { id: 1, title: "Learn HTML", status: "done", completedOn: new Date("2021-09-11") },
